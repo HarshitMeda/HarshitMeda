@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Harshit Meda</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    <script type="text/javascript" src="https://unpkg.com/css-doodle@0.12.2/css-doodle.min.js">
+    </script>
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Rosario:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+
+
+  <body id="body">
+    <!--<css-doodle>
+      @grid: 1 / 100vw 100vh;
+      background-color: hsl(235.862, 59%, 15%);
+      background-size: 200px 200px;
+      background-image: @doodle(
+        @grid: 6 / 100%;
+        @size: 4px;
+        font-size: 4px;
+        color: hsl(@r240, 30%, 50%);
+        box-shadow: @m3x5((
+          calc(4em - @nx * 1em) calc(@ny * 1em)
+            @p(@m3(currentColor), @m2(transparent)),
+          calc(2em + @nx * 1em) calc(@ny * 1em)
+            @lp
+        ));
+      );
+    </css-doodle>-->
+
+    <css-doodle>
+  :doodle {
+    @grid: 9 / 100vw 100vh;
+    background: hsl(240,59%,15%);
+    font-family: sans-serif;
+  }
+  :after {
+    content: \@hex.@r(0x2500, 0x257f);
+    color: hsla(@r360, 70%, 70%, @r.9);
+    font-size: 5vmax;
+  }
+  </css-doodle>
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="Articles.html"> <i class="fas fa-pen"></i> Articles</a></li>
+        <li><a href="Resume.pdf"> <i class="fas fa-file"></i> Resume</a></li>
+        <li><a href="Projects.html"> <i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="index.html" class="active"> <i class="far fa-id-card"></i> About Me</a></li>
+      </ul>
+    </nav>
+
+    <div id="hibox">
+      <div id="hi">
+        <h1 style="font-family: 'Amaranth', sans-serif; font-weight: normal;">Hi! I am Harshit M...</h1>
+        <p style="font-size: 20px; font-family: 'Rosario', sans-serif;">A pre-final year Undergraduate student at IIT Ropar. I am an avid reader who enjoys exploring new technologies.</p>
+        <p style="font-size: 20px; font-family: 'Rosario', sans-serif;">A programmer at heart, I am passionate about Data Science,
+          Machine Learning and am venturing into the world of Web Development.</p>
+        <div id="social" style="float: right;">
+          <a href="https://www.linkedin.com/in/harshit-m-27420116b/" class="social_link_format">
+              <i class="fab fa-linkedin-in social-default" style="padding: 10px;" id="LinkedIn"></i>
+          </a>
+          <a href="https://github.com/HarshitMeda" class="social_link_format">
+              <i class="fab fa-github social-default" style="padding: 10px;" id="GitHub"></i>
+          </a>
+          <!--<a href="mailto:2018meb1227@iitrpr.ac.in" class="social_link_format">
+              <i class="fas fa-envelope social-default" style="padding: 10px;" id="EMail"></i>
+          </a>-->
+          <a href="https://www.facebook.com/meda.harshit" class="social_link_format">
+              <i class="fab fa-facebook-f social-default" style="padding: 10px;" id="Facebook"></i>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

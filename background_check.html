@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Backgrounds</title>
+    <script type="text/javascript" src="https://unpkg.com/css-doodle@0.12.2/css-doodle.min.js">
+    </script>
+  </head>
+
+  <body>
+    <css-doodle>
+  :doodle {
+    @grid: 20 / 100vmax;
+    background: #0278AE;
+    font-family: sans-serif;
+  }
+  :after {
+    content: \@hex.@r(0x2500, 0x257f);
+    color: hsla(@r360, 70%, 70%, @r.9);
+    font-size: 5vmax;
+  }
+</css-doodle>
+  </body>
+</html>
