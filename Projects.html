@@ -14,45 +14,43 @@
     <!--<link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">-->
     <script type="text/javascript" src="https://unpkg.com/css-doodle@0.12.2/css-doodle.min.js">
     </script>
-    <link rel="stylesheet" href="Projects.css">
+
+
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Rosario:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="Projects.css">
+
+    <style media="screen">
+    .float{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    div{
+      margin: 0;
+      padding: 0;
+    }
+    </style>
+
   </head>
 
 
-  <body id="body">
-    <!--<css-doodle>
-      @grid: 1 / 100vw 220vh;
-      background-color: hsl(235.862, 59%, 15%);
-      background-size: 200px 200px;
-
-      background-image: @doodle(
-        @grid: 6 / 100%;
-        @size: 4px;
-        font-size: 4px;
-        color: hsl(@r240, 30%, 50%);
-        box-shadow: @m3x5((
-          calc(4em - @nx * 1em) calc(@ny * 1em)
-            @p(@m3(currentColor), @m2(transparent)),
-          calc(2em + @nx * 1em) calc(@ny * 1em)
-            @lp
-        ));
-      );
-    </css-doodle>-->
+  <body id="body" style="background: hsl(240,59%,15%);">
 
     <css-doodle>
-  :doodle {
-    @grid: 15 / 100vw 220vh;
-    background: hsl(240,59%,15%);
-    font-family: sans-serif;
-  }
-  :after {
-    content: \@hex.@r(0x2500, 0x257f);
-    color: hsla(@r360, 70%, 70%, @r.9);
-    font-size: 5vmax;
-  }
+    :doodle {
+      @grid: 15 / 100vw 220vh;
+      font-family: sans-serif;
+    }
+    :after {
+      content: \@hex.@r(0x2500, 0x257f);
+      color: hsla(@r360, 70%, 70%, @r.9);
+      font-size: 5vmax;
+    }
   </css-doodle>
 
     <nav id="navbar">
@@ -66,9 +64,9 @@
 
     <div class="project" id="project1" style="position: absolute;top: 65%;right: 5%;">
       <div class="project-text" id="ptext1">
-          <span class="left-float"><h3>2D heat conduction model</h3></span><span class="right-float"><h5>Deep Learning</h5></span>
+          <span class="left-float"><h3>2D heat conduction model</h3></span><span class="right-float"><h5 style="font-size: 1.5vmax;">Deep Learning</h5></span>
 
-          <p style="padding-top: 10%; font-family: 'Rosario', sans-serif;">The aim of this project is to develop a Machine Learning Model that can predict the steady‐state temperature
+          <p style="padding-top: 10%; font-family: 'Rosario', sans-serif;font-size: 1.5vmax;">The aim of this project is to develop a Machine Learning Model that can predict the steady‐state temperature
             distribution for simple geometries, given boundary conditions. This method offers a major advantage over conventional
              methods such as finite element method which is computationally costly</p>
       </div>
@@ -77,9 +75,9 @@
     <div class="project" id="project2" style="position: absolute;top: 15%;left: 5%;">
 
       <div class="project-text" id="ptext2">
-        <span class="left-float"><h3>Live Drowsiness Detector</h3></span> <span class="right-float"><h5>Machine Learning</h5></span>
+        <span class="left-float"><h3>Live Drowsiness Detector</h3></span> <span class="right-float"><h5 style="font-size: 1.5vmax;">Machine Learning</h5></span>
 
-          <p style="padding-top: 10%; font-family: 'Rosario', sans-serif;">I used computer vision algorithms to extract facial features, followed by machine learning techniques to
+          <p style="padding-top: 10%; font-family: 'Rosario', sans-serif;font-size: 1.5vmax;">I used computer vision algorithms to extract facial features, followed by machine learning techniques to
             effectively detect driver state. Hence, alerting the driver in a drowsy state and preventing any harm that may have
             been caused.</p>
       </div>
@@ -87,18 +85,19 @@
 
     <div class="project" id="project3" style="position: absolute;top: 120%;left: 5%;">
       <div class="project-text" id="ptext3">
-          <span class="left-float"><h3>PDF Extractor</h3></span> <span class="right-float"><h5>Python</h5></span>
-          <p style="padding-top: 10%; font-family: 'Rosario', sans-serif;">The aim of the project was to read an array of PDF files in a given folder and extract relevant pages which will
-            be supplied to the software in a CSV file. My software saves 80% time as it has automated a repetitive task performed
-            regularly at the company.</p>
+      <span class="left-float"><h3>PDF Extractor</h3></span> <span class="right-float"><h5 style="font-size: 1.5vmax;">Python</h5></span>
+      <p style="padding-top: 10%; font-family: 'Rosario', sans-serif;font-size: 1.5vmax;">The aim of the project was to read an array of PDF files in a given folder and extract relevant pages which will
+      be supplied to the software in a CSV file. My software saves 80% time as it has automated a repetitive task performed
+      regularly at the company.</p>
+    </div>
       </div>
     </div>
 
     <div class="project" id="project4" style="position: absolute;top: 170%;right: 5%;">
       <div class="project-text" id="ptext4">
-        <span class="left-float"><h3>Smart Biometric Attendance System</h3></span> <span class="right-float"><h5>IoT</h5></span>
+        <span class="left-float"><h3>Smart Biometric Attendance System</h3></span> <span class="right-float"><h5 style="font-size: 1.5vmax;">IoT</h5></span>
 
-          <p style="padding-top: 10%; font-family: 'Rosario', sans-serif;">The conventional attendance in addition to wasting lecture time is not foolproof. Hence we developed the
+          <p style="padding-top: 10%; font-family: 'Rosario', sans-serif;font-size: 1.5vmax;">The conventional attendance in addition to wasting lecture time is not foolproof. Hence we developed the
             Biometric Attendance System which is foolproof and hassle free. IoT Features: The Attendance registered is
             automatically uploaded onto the cloud to easy access</p>
       </div>
