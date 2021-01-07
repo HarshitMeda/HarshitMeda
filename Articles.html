@@ -19,6 +19,39 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Rosario:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+      .articles-div{
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        background-color: #0a0c27;
+        width: 80%;
+        align-items: center;
+        opacity: 95%;
+      }
+
+      .article-link{
+        font-size: 1.5vmax;
+        color: white;
+        font-family: 'Rosario', sans-serif;
+      }
+      .a-div{
+        margin: 2vmax;
+      }
+
+      hr{
+        width: 95%;
+        color: #FFFFFF;
+      }
+      h2{
+        color: #FFFFFF;
+        padding-left: 2.5%;
+        font-family: 'Amaranth', sans-serif;
+        font-weight: normal;
+      }
+
+    </style>
   </head>
 
 
@@ -41,17 +74,29 @@
         <li><a href="Articles.html" class="active"> <i class="fas fa-pen"></i> Articles</a></li>
         <li><a href="Resume.pdf"> <i class="fas fa-file"></i> Resume</a></li>
         <li><a href="Projects.html"> <i class="fas fa-project-diagram"></i> Projects</a></li>
-        <li><a href="index.html"> <i class="far fa-id-card"></i> About Me</a></li>
+        <li><a href="/"> <i class="far fa-id-card"></i> About Me</a></li>
       </ul>
     </nav>
 
-    <div id="Nothing-here">
+    <!--<div id="Nothing-here">
       <div class="Nothing-here-text">
         <h1 style="text-align: center;">No Articles Posted.</h1>
         <p style="text-align: center; font-size: 20px;">Do come back later to check out my articles.</p>
       </div>
-    </div>
+    </div>-->
 
+    <div class="articles-div">
+      <div class="sub-topic">
+        <h2>Human Psychology</h2>
+        <hr>
+        <div class="a-div">
+          <a target="_blank" href="https://mharshit30.medium.com/how-humans-have-evolved-to-better-resolve-conflicts-91805de0379b"
+          class="article-link"> <i class="fas fa-external-link-alt"></i> How Humans have evolved to better Resolve Conflicts</a>
+        </div>
+      </div>
+
+
+    </div>
 
 
   </body>
